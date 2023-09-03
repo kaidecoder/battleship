@@ -1,0 +1,24 @@
+.grid {
+  display: grid;
+  background-color: #ccc;
+  max-width: 900px;
+  margin: 0 auto;
+  grid-template-columns: repeat(7, 1fr);
+  position: relative;
+}
+
+.box {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+.battleship {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    width: 50px;
+    object-fit: contain;
+    display: none;
+}
