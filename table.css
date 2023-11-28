@@ -1,0 +1,39 @@
+/* body {
+    counter-reset: section;	
+    counter-reset: subsection;		
+}
+
+p.TableRowSectionNum::before {
+    counter-reset: subsection;
+    counter-increment: section;
+    content: counter(section) " .0";
+}
+
+p.TableRowSubSectionNum::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";	
+} */
+
+/* table.numberedRows {
+	counter-reset: rowNum;
+}
+
+table.numberedRows tbody tr
+{
+	counter-increment: rowNum;
+}
+
+table.numberedRows tbody  tr td:first-child::before {
+	content: counter(rowNum);
+} */
+
+tr,th{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    padding: 20px;
+}
+td{
+    width: 20px;
+    height: 20px;
+}

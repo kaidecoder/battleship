@@ -1,3 +1,6 @@
+//Create a table, assign each cell to a class.  Research whether grids or tables have access to a numbering system -  so that i can assign ordered pairs to my ships
+//create the ships with css or use the ship image 
+
 let gameBoard = document.querySelector(".game-board");
 gameBoard.classList.add("grid");
 let randomNumber = Math.floor(Math.random() * 49) + 1;
@@ -38,8 +41,8 @@ function guessLocation() {
   guess.innerText = guessShipLocation;
   randomNum.innerText = randomNumber;
   guessShipLocation === randomNumber
-    ? ((guess.innerText += " You sunk my battleship"),
-      (img.style.display = "inline-block"))
+    ? (guess.innerText += " You sunk my battleship")
+      (img.style.display = "inline-block")
     : "Try again";
 }
 
