@@ -22,34 +22,34 @@
       <tbody>
         <tr>
           <td onclick="clickFunction()"></td>
+          <td class="ship ship1 hidden" onclick="clickFunction()"><img src="./ship.png" alt=""></td>
           <td onclick="clickFunction()"></td>
           <td onclick="clickFunction()"></td>
+          <td class="ship ship2 hidden" onclick="clickFunction()"><img src="./ship.png" alt=""></td>
+        </tr>
+        <tr>
+          <td onclick="clickFunction()"></td>
+          <td onclick="clickFunction()"></td>
+          <td class="ship ship3 hidden" onclick="clickFunction()"><img src="./ship.png" alt=""></td>
           <td onclick="clickFunction()"></td>
           <td onclick="clickFunction()"></td>
         </tr>
         <tr>
           <td onclick="clickFunction()"></td>
+          <td class="ship ship4 hidden" onclick="clickFunction()"><img src="./ship.png" alt=""></td>
           <td onclick="clickFunction()"></td>
           <td onclick="clickFunction()"></td>
-          <td onclick="clickFunction()"></td>
-          <td onclick="clickFunction()"></td>
+          <td class="ship ship5 hidden" onclick="clickFunction()"><img src="./ship.png" alt=""></td>
         </tr>
         <tr>
           <td onclick="clickFunction()"></td>
           <td onclick="clickFunction()"></td>
           <td onclick="clickFunction()"></td>
-          <td onclick="clickFunction()"></td>
-          <td onclick="clickFunction()"></td>
-        </tr>
-        <tr>
-          <td onclick="clickFunction()"></td>
-          <td onclick="clickFunction()"></td>
-          <td onclick="clickFunction()"></td>
-          <td onclick="clickFunction()"></td>
+          <td class="ship ship6 hidden" onclick="clickFunction()"><img src="./ship.png" alt=""></td>
           <td onclick="clickFunction()"></td>
         </tr>
         <tr>
-          <td onclick="clickFunction()"></td>
+            <td class="ship ship7 hidden" onclick="clickFunction()"><img src="./ship.png" alt=""></td>
           <td onclick="clickFunction()"></td>
           <td onclick="clickFunction()"></td>
           <td onclick="clickFunction()"></td>
@@ -58,12 +58,13 @@
       </tbody>
     </table>
     <script>
-      const td = document.querySelector("td");
-      td.addEventListener("click", clickFunction)
-
-      function clickFunction(){
-        console.log("You clicked me!!")
-      }
+      const td = document.querySelectorAll("td");
+      const ship1 = document.querySelector(".ship1")
+    //   tds.addEventListener("click", clickFunction)
+  function clickFunction(){
+    ship1.classList.toggle("hidden")
+  }
+      
     </script>
   </body>
 </html>
